@@ -1,0 +1,69 @@
+.footer {
+  background: rgba(16, 16, 16, 0.95);
+  padding: 2rem 0;
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.socialLink {
+  color: #61dafb;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: rgba(97, 218, 251, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.socialLink:nth-child(4) {
+  background: linear-gradient(45deg, rgba(405, 93, 234, 0.1), rgba(252, 204, 99, 0.1));
+  color: #fff;
+}
+
+.socialLink:nth-child(4):hover {
+  background: linear-gradient(45deg, rgba(405, 93, 234, 0.2), rgba(252, 204, 99, 0.2));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(405, 93, 234, 0.2);
+}
+
+.socialLink:hover {
+  background: rgba(97, 218, 251, 0.2);
+  transform: translateY(-2px);
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.copyright {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .socialLinks {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .socialLink {
+    justify-content: center;
+  }
+}
